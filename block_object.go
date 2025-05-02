@@ -122,7 +122,7 @@ func unmarshalBlockObject(r json.RawMessage, object blockObject) (blockObject, e
 type TextBlockObject struct {
 	Type     string `json:"type"`
 	Text     string `json:"text"`
-	Emoji    *bool  `json:"emoji"`
+	Emoji    *bool  `json:"emoji,omitempty"`
 	Verbatim bool   `json:"verbatim,omitempty"`
 }
 
